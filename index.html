@@ -1765,11 +1765,15 @@
       const t3 = DATA.filter(r => r[2] === '3').length;
 
       // Counts
-      document.getElementById('h1').textContent = t1;
-      document.getElementById('h2').textContent = t2;
-      document.getElementById('h3').textContent = t3;
-      document.getElementById('hs-total').textContent = total;
-      document.getElementById('hs-t1').textContent = t1;
+      // Counts
+      ['h1', 'h2', 'h3'].forEach((id, i) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = [t1, t2, t3][i];
+      });
+      const elHsTot = document.getElementById('hs-total');
+      if (elHsTot) elHsTot.textContent = total;
+      const elHsT1 = document.getElementById('hs-t1');
+      if (elHsT1) elHsT1.textContent = t1;
       document.getElementById('s-total').textContent = total;
       document.getElementById('s-t1').textContent = t1;
       document.getElementById('s-t2').textContent = t2;

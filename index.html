@@ -1500,10 +1500,25 @@
 
     <!-- MAIN -->
     <main>
-      <div style="margin-bottom: 32px; padding: 0 12px;">
-        <p class="hero-eyebrow" style="margin-bottom: 6px;">Las Vegas Convention Center · 2026</p>
-        <h1 style="font-family: var(--font-d); font-size: 32px; font-weight: 800; letter-spacing: -1px; margin-bottom: 8px;">Licensing Expo 2026 展商攻略</h1>
-        <p style="font-size: 14px; color: var(--muted); max-width: 600px; line-height: 1.6;">依目標整理，涵蓋 Tier 1–4 優先度與七大 IP 類別。三天展覽完整地圖，助你鎖定最高價值合作對象、最大化每一個小時。</p>
+      <div style="margin-bottom: 32px; padding: 0 12px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <p class="hero-eyebrow" style="margin-bottom: 6px;">Las Vegas Convention Center · 2026</p>
+          <h1 style="font-family: var(--font-d); font-size: 32px; font-weight: 800; letter-spacing: -1px; margin-bottom: 8px;">Licensing Expo 2026 展商攻略</h1>
+          <p style="font-size: 14px; color: var(--muted); max-width: 600px; line-height: 1.6;">依目標整理，涵蓋 Tier 1–4 優先度與七大 IP 類別。三天展覽完整地圖，助你鎖定最高價值合作對象、最大化每一個小時。</p>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <button class="bk-btn" id="bk-btn" onclick="toggleBkFilter()">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+            書籤 <span id="bk-count">0</span>
+          </button>
+          <button class="tog" onclick="toggleTheme()" aria-label="切換主題" style="display: flex; align-items: center; justify-content: center; width: auto; padding: 0 12px; height: 32px; background: var(--surface2); border: 1px solid var(--border); border-radius: 16px; color: var(--muted); cursor: pointer; gap: 6px;">
+            <svg class="theme-ico-light" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="theme-ico-dark" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <span class="theme-lbl" style="font-size: 13px; font-weight: 600;"></span>
+          </button>
+        </div>
       </div>
 
 
@@ -1609,19 +1624,6 @@
             <span class="pager-pg" id="pager-pg"></span>
             <button class="pager-btn" id="btn-n" onclick="pg(1)">下一頁 →</button>
           </div>
-        </div>
-        <div style="display: flex; gap: 12px; justify-content: flex-end; width: 100%;">
-          <button class="bk-btn" id="bk-btn" onclick="toggleBkFilter()">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-            </svg>
-            書籤 <span id="bk-count">0</span>
-          </button>
-          <button class="tog" onclick="toggleTheme()" aria-label="切換主題" style="display: flex; align-items: center; justify-content: center; width: auto; padding: 0 12px; height: 32px; background: var(--surface2); border: 1px solid var(--border); border-radius: 16px; color: var(--muted); cursor: pointer; gap: 6px;">
-            <svg class="theme-ico-light" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            <svg class="theme-ico-dark" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            <span class="theme-lbl" style="font-size: 13px; font-weight: 600;"></span>
-          </button>
         </div>
       </div>
 

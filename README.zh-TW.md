@@ -1,3 +1,6 @@
+[English](README.en.md) | **繁體中文**
+
+
 # Licensing Expo 2026 — 展商攻略
 
 這是一個專為 Licensing Expo 2026 設計的單頁式網頁應用程式（Single Page Application），提供互動式的展商目錄，幫助使用者高效瀏覽、篩選並標記重點展商，最大化參展效益。

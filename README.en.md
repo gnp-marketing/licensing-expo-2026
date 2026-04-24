@@ -1,3 +1,5 @@
+**English** | [繁體中文](README.md)
+
 # Licensing Expo 2026 — Exhibitor Guide
 
 This is a Single Page Application (SPA) designed specifically for the Licensing Expo 2026. It provides an interactive exhibitor directory to help users efficiently browse, filter, and bookmark key exhibitors, maximizing the ROI of attending the expo.
